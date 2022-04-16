@@ -1,0 +1,14 @@
+// default-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/default-theme/default-theme.scss:dist/css/default-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+$theme-colors: (
+    "default-blue":#50789a
+);
+
+@import "../bootstrap";

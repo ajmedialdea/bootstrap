@@ -1,0 +1,35 @@
+// solaris-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/solaris-theme/solaris-theme.scss:dist/css/solaris-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+$blue:#0071ce; //#0187a6
+//$indigo: #6610f2;
+//$purple:#990066;
+//$pink: #e83e8c;
+//$red:#e32119;
+$orange:#ff671d; //#f49e1e
+//$yellow:#fdc600;
+//$green:#008f4f;
+//$teal: #20c997;
+//$cyan: #17a2b8;
+
+$warning: $orange;
+
+$theme-colors: (
+    "solaris-blue": $blue,
+    "solaris-dark-blue": darken($blue, 5%), // #01728d
+    "solaris-light-blue": lighten($blue, 15%), // #01c5f2
+    "solaris-orange": $orange,
+    "solaris-dark-orange": darken($orange, 5%), // #f0a701
+    "solaris-light-orange": lighten($orange, 15%), // #fecc58
+);
+
+// Toasts
+$toast-background-color: rgba(lighten($orange, 15%), .85);
+
+@import "../bootstrap";

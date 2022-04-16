@@ -1,0 +1,21 @@
+// bivintel-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/coursebroker-theme/coursebroker-theme.scss:dist/css/coursebroker-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+$blue:#003259;
+$orange:#F29318;
+
+$warning: $orange;
+
+$theme-colors: (
+    "coursebroker-blue": $blue,
+    "coursebroker-dark-blue": darken($blue, 5%),
+    "coursebroker-light-blue": lighten($blue, 15%)    
+);
+
+@import "../bootstrap";

@@ -1,0 +1,18 @@
+// bivintel-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/bivintel-theme/bivintel-theme.scss:dist/css/bivintel-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+$blue:#003259;
+
+$theme-colors: (
+    "bivintel-blue": $blue,
+    "bivintel-dark-blue": darken($blue, 5%),
+    "bivintel-light-blue": lighten($blue, 15%),
+);
+
+@import "../bootstrap";

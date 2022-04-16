@@ -1,0 +1,40 @@
+// utpl-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/utpl-theme/utpl-theme.scss:dist/css/utpl-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+$blue:#003f72;
+//$indigo: #6610f2;
+//$purple:#990066;
+//$pink: #e83e8c;
+//$red:#e32119;
+$orange:#eaab00;
+//$yellow:#fdc600;
+//$green:#008f4f;
+//$teal: #20c997;
+//$cyan: #17a2b8;
+
+$warning: $orange;
+
+$theme-colors: (
+    "utpl-blue": $blue,
+    "utpl-dark-blue": darken($blue, 5%),
+    "utpl-light-blue": lighten($blue, 15%),
+    "utpl-orange": $orange,
+    "utpl-dark-orange": darken($orange, 5%),
+    "utpl-light-orange": lighten($orange, 15%),
+);
+
+// Toasts
+$toast-background-color: rgba(lighten($orange, 15%), .85);
+
+// Fonts
+
+$font-family-sans-serif: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+$font-family-monospace: 'Lucida Console', Courier, monospace;
+
+@import "../bootstrap";

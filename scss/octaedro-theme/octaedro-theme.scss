@@ -1,0 +1,33 @@
+// octaedro-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/octaedro-theme/octaedro-theme.scss:dist/css/octaedro-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+//$blue: #007bff;
+//$indigo: #6610f2;
+$purple:#990066;
+//$pink: #e83e8c;
+$red:#e32119;
+//$orange: #fd7e14;
+$yellow:#fdc600;
+$green:#008f4f;
+//$teal: #20c997;
+//$cyan: #17a2b8;
+
+$theme-colors: (
+    "octaedro-purple": $purple,
+    "octaedro-red": $red,
+    "octaedro-yellow": $yellow,
+    "octaedro-green": $green
+);
+
+// Fonts
+
+$font-family-sans-serif: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+$font-family-monospace: 'Lucida Console', Courier, monospace;
+
+@import "../bootstrap";

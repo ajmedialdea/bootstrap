@@ -1,0 +1,40 @@
+// cep-theme.scss
+// Build command: <BOOTSTRAP_ROOT_DIR>$ sass scss/cep-theme/cep-theme.scss:dist/css/cep-theme.css
+
+// Option A: Include all of Bootstrap
+
+// Overrides
+
+// Color system
+
+$blue:#27394e;
+//$indigo: #6610f2;
+//$purple:#990066;
+//$pink: #e83e8c;
+//$red:#e32119;
+$orange:#e44a3c;
+//$yellow:#fdc600;
+//$green:#008f4f;
+//$teal: #20c997;
+//$cyan: #17a2b8;
+
+$warning: $orange;
+
+$theme-colors: (
+    "cep-blue": $blue,
+    "cep-dark-blue": darken($blue, 5%),
+    "cep-light-blue": lighten($blue, 15%),
+    "cep-orange": $orange,
+    "cep-dark-orange": darken($orange, 5%),
+    "cep-light-orange": lighten($orange, 15%),
+);
+
+// Toasts
+$toast-background-color: rgba(lighten($orange, 15%), .85);
+
+// Fonts
+
+$font-family-sans-serif: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+$font-family-monospace: 'Lucida Console', Courier, monospace;
+
+@import "../bootstrap";
